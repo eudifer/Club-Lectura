@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Club de Lectura</title>
+  <meta name="description" content="Página informativa de un club de lectura de ejemplo: próxima reunión y libros del mes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Public+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="logo" href="#inicio">Club de Lectura</a>
+    <nav aria-label="Principal">
+      <a href="#reuniones">Reuniones</a>
+      <a href="#libros">Libros</a>
+      <a href="#participar">Participar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <p class="etiqueta">Próxima reunión</p>
+      <h1 id="titulo-reunion">Cargando fecha…</h1>
+      <p class="cuenta" id="cuenta" aria-live="polite"></p>
+      <dl class="datos">
+        <div><dt>Libro del mes</dt><dd id="libro-mes">—</dd></div>
+        <div><dt>Lugar</dt><dd>Biblioteca</dd></div>
+        <div><dt>Hora</dt><dd>16:00</dd></div>
+      </dl>
+      <a class="btn" href="#reuniones">Ver calendario</a>
+    </section>
+
+    <section id="reuniones">
+      <h2>Calendario</h2>
+      <p class="intro">Nos juntamos todos los sábados a las 16:00. Cada semana comentamos un tramo del libro del mes.</p>
+      <ol class="calendario" id="calendario"></ol>
+    </section>
+
+    <section id="libros">
+      <h2>Libros</h2>
+      <p class="intro">Lista de ejemplo. Cada mes elegimos un título entre todos.</p>
+      <ul class="libros" id="libros-lista"></ul>
+    </section>
+
+    <section id="participar">
+      <h2>Cómo participar</h2>
+      <ol class="pasos">
+        <li>Lee el libro del mes a tu ritmo.</li>
+        <li>Llega el sábado a la biblioteca a las 16:00.</li>
+        <li>Trae una frase o una duda para compartir.</li>
+      </ol>
+      <p class="intro">No necesitas inscribirte. Puedes venir a una sola reunión para probar.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Club de Lectura es un sitio de práctica con contenido de ejemplo, hecho por Benjamín Cáceres.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
